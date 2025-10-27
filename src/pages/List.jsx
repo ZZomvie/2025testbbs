@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import supabase from "./utils/supabase";
+import supabase from "../utills/supabase";
 import dayjs from "dayjs";
 import { Link } from "react-router-dom";
 
