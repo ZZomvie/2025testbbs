@@ -5,6 +5,7 @@ import MenuComp from "./components/layout/MenuComp";
 import Home from "./pages/Home";
 import Board from "./pages/Board";
 import ErrerComp from "./pages/Error";
+import View from "./pages/View";
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path="/list" element={<List />} />
           <Route path="/board" element={<Board />} />
           <Route path="*" element={<ErrerComp />} />
+
+          <Route path="/view" element={<View></View>} />
         </Routes>
       </BrowserRouter>
     </>
