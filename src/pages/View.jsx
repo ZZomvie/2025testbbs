@@ -5,7 +5,8 @@ function View() {
   return (
     <div className="mt-3">
       <Link to="/view">
-        <div className="btn btn-outline-primary">View</div>
+        <p>View</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat</p>
       </Link>
     </div>
   );

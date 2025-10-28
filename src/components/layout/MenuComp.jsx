@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function MenuComp() {
   return (
@@ -19,26 +19,26 @@ function MenuComp() {
 
       {/* Navbar */}
       <nav className="navbar bg-body-secondary px-3 mb-3">
-        <Link className="navbar-brand" to="/">
+        <NavLink className="navbar-brand" to="/">
           Navbar
-        </Link>
+        </NavLink>
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <Link className="nav-link" to="/">
+            <NavLink className="nav-link" to="/">
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" to="/list">
+            <NavLink className="nav-link" to="/list">
               List
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link className="nav-link" to="/board">
+            <NavLink className="nav-link" to="/board">
               Board
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

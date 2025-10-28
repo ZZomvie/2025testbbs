@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import supabase from "../utills/supabase";
 import dayjs from "dayjs";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -25,12 +25,12 @@ function App() {
       <h3>Posts</h3>
       <ul>
         {posts.map((post, i) => (
-          <Link to="/view">
+          <NavLink to="/view">
             <li key={i}>
-              {post.title} / {post.name} / {post.content} /{" "}
+              {post.title} / {post.name} / {post.content} /
               {dayjs(post.created_at).format("YYYY-MM-DD")}
             </li>
-          </Link>
+          </NavLink>
         ))}
       </ul>
     </div>
