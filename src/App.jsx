@@ -33,7 +33,7 @@ function App() {
           <Route path="/board" element={<Board />} />
           <Route path="*" element={<ErrerComp />} />
 
-          <Route path="/view" element={<View></View>} />
+          <Route path="/view/:id" element={<View></View>} />
         </Routes>
       </BrowserRouter>
     </>
